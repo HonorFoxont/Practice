@@ -66,7 +66,7 @@ header li a{
 }
 
 header nav{
-    margin-right: 100px;
+    margin-right: 10%;
 }
 #image {
     background: url('../img/consert.jpg')no-repeat -50px -400px;
@@ -126,6 +126,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
 }
 #special li{
@@ -217,7 +218,6 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 900px;
 }
 .people .user{
     padding: 0px;
@@ -309,7 +309,7 @@ footer .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 10%;
 }
 
 footer a[class=up]{
@@ -353,6 +353,7 @@ footer a:hover{
 @media (max-width:890px){
     /*Header*/
     header{
+        padding: 0px;
         display: flex;
         flex-direction:column;
         align-items: center;
@@ -386,5 +387,5 @@ footer a:hover{
     #forms textarea{
         width: 100%;
     }
-    
 }
+
