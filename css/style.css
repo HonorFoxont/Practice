@@ -1,0 +1,390 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: lightslategray;
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+.current{
+    text-decoration: none;
+    background-color: #25BA9D;
+    padding:10px 10px ;
+    color: #ffffff;
+    border: none;
+}
+a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+header{
+    color: black;
+    min-height: 100px;
+    display: flex;
+    align-items:center ;
+    padding-left: 60px;
+    justify-content: space-between;
+    
+}
+#branding{
+    display: flex;
+    align-items: center;
+}
+#appname{
+    margin-left: 10px;
+}
+#appname h3{
+    margin: 0;
+    font-weight: 100;
+    min-width: max-content;
+} 
+#appname div{
+    font:18px ;
+    min-width: max-content;
+}
+
+header ul{
+    display:flex;
+}
+header li{
+    list-style: none;
+}
+header li a{
+    text-decoration: none;
+    color: black;
+    padding:10px 10px;
+}
+
+header nav{
+    margin-right: 100px;
+}
+#image {
+    background: url('../img/consert.jpg')no-repeat -50px -400px;
+    min-height: 600px;
+}
+#layer{
+    width: 100%;
+    background: rgba(0,0,0,0.6)  ;
+    color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#layer h3{
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+#layer h3 span{
+    font-weight: 700;
+}
+#layer p{
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 100px;
+}
+
+#layer .down {
+    width:50px;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+}
+#layer .down i {
+    line-height: 1.65;
+}
+
+#special{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.title{
+    font-size:40px;
+    margin-top: 50PX;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+#special nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+#special li{
+    list-style: none;
+    margin:1em 10px ;
+    width: max-content;
+} 
+.completewrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.towrap{
+        display: flex;
+        justify-content: center;
+        margin: 0 2%;
+
+}
+.wrapper{
+    margin-left: 2%;
+    margin-right: 2%;
+    width:200px;
+    position: relative;
+}
+.wrapper img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.text{
+    background: rgba(0,0,0,0.6);
+    width:200px;
+    height: 200px;
+    top: 0%;
+    left: 0%;
+    border-radius: 50%;
+    position: absolute;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+.text h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+.text i{
+    background:gray ;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.text:hover{
+    opacity: 100%;
+    transition: 0.6s;
+}
+
+.images{
+    display:flex;
+    justify-content: center;
+    margin-top:40px;
+}
+#aboutus{
+    background-color: #12A384;
+    margin-top: 100px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#aboutus .aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.aboutus h1{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: 100;
+}
+#aboutus .people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 900px;
+}
+.people .user{
+    padding: 0px;
+    width: 300px;
+    margin:30px 2%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    line-height: 1.6em;
+    text-align: center;
+}
+.user img{
+    width:100%;
+}
+.user h1{
+    font-size: 30px;
+    margin:10px 0px 0px 0px ;
+    font-weight:100;
+}
+.user div{
+    font-size: 20px;
+    font-family: Verdana,Tahoma, sans-serif;
+    font-style: italic;
+}
+#contactus{
+    background:#f0f0f0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactintro{
+    text-align: center;
+    padding-top:30px;
+}    
+.contactintro h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0;
+}
+.contactintro p{
+    font-size: 18px;
+}
+#forms{
+    display: flex;
+
+}
+#forms form{
+    padding-top: 20px;
+    margin-right: 10px;
+}
+#forms input[type="text"],input[type="email"]{
+    width: 200px;
+    padding: 10px;
+    margin: 4px;
+    margin-bottom: 20px;
+}
+#forms textarea{
+    width: 460px;
+    height: 150px;
+}
+#forms button{
+    float:right  ;
+}
+#info{
+    line-height: 1.7em;
+    width: max-content;
+}
+#info h2{
+    padding-left: 40px;
+}
+#info li{
+    list-style: none;
+}
+footer .container{
+    min-height:100px ;
+    background: #35424a;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+footer a[class=up]{
+    background-color: #25BA9D;
+    color: white;
+    padding: 8px 14px;
+    width: 3px;
+    height: 3px;
+    font-size: 30px;
+    text-align: center;
+}
+
+header nav a:hover{
+    background: #f0f0f0;
+    transition: 0.6s;
+}
+#special nav a:hover{
+    background-color: #12A384;
+    transition: 0.6s;
+}
+#layer a[class="current"]:hover{
+    background-color: #12A384;
+    transition: 0.6s;
+}
+#layer a[class="down"]:hover{
+    background-color: lightgray;
+    transition: 0.6s;
+}
+button:hover{
+    background-color: #12A384;
+    transition: 0.6s;
+}
+button:active{
+   border: none;
+}
+footer a:hover{
+    background-color: #12A384;
+    transition: 0.6s;
+}
+
+@media (max-width:890px){
+    /*Header*/
+    header{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    #branding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #appname{
+        text-align: center;
+    }
+    /*Protfolio*/
+    .towrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*aboutus*/
+    .people{
+        flex-direction: column;
+    }
+    /*contact us*/
+    #forms{
+       flex-direction: column;
+       align-items: center;
+    }
+    #forms button{
+        float: none;
+        margin:5px 40% ;
+    }
+    #forms textarea{
+        width: 100%;
+    }
+    
+}
