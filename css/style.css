@@ -72,7 +72,7 @@ header nav{
     background: url('../img/consert.jpg')no-repeat -50px -400px;
     min-height: 600px;
 }
-#layer{
+.layer{
     width: 100%;
     background: rgba(0,0,0,0.6)  ;
     color: white;
@@ -82,31 +82,32 @@ header nav{
     align-items: center;
 }
 
-#layer h3{
+.layer h3{
+    text-align: center;
     font-size: 70px;
     font-weight: 100;
     margin-bottom: 30px;
 }
-#layer h3 span{
+.layer h3 span{
     font-weight: 700;
 }
-#layer p{
+.layer p{
     text-align: center;
     max-width: 700px;
     margin-bottom: 100px;
 }
 
-#layer .down {
+.layer .down {
     width:50px;
     height: 50px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10%;
     border-radius: 50%;
     color: black;
     background-color: white;
     font-size: 30px;
 }
-#layer .down i {
+.layer .down i {
     line-height: 1.65;
 }
 
@@ -118,9 +119,12 @@ header nav{
 }
 .title{
     font-size:40px;
-    margin-top: 50PX;
+    margin-top: 5%;
     margin-bottom: 0;
     font-weight: 100;
+}
+#special p{
+    text-align: center;
 }
 #special nav ul{
     display: flex;
@@ -142,13 +146,12 @@ header nav{
 .towrap{
         display: flex;
         justify-content: center;
-        margin: 0 2%;
+        margin: 0 4%;
 
 }
 .wrapper{
-    margin-left: 2%;
-    margin-right: 2%;
-    width:200px;
+    margin:2% 4%;
+    width:auto;
     position: relative;
 }
 .wrapper img {
@@ -190,16 +193,16 @@ header nav{
 .images{
     display:flex;
     justify-content: center;
-    margin-top:40px;
+    margin-top:0;
 }
 #aboutus{
     background-color: #12A384;
-    margin-top: 100px;
+    margin-top: 8%;
     min-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
 }
 #aboutus .aboutus{
     display: flex;
@@ -209,10 +212,14 @@ header nav{
     font-size: 18px;
 }
 .aboutus h1{
-    margin-top: 30px;
+    margin-top: 5%;
     margin-bottom: 0;
     font-size: 50px;
     font-weight: 100;
+}
+.aboutus p{
+    padding: 0 2%;
+    text-align: center;
 }
 #aboutus .people{
     display: flex;
@@ -222,7 +229,7 @@ header nav{
 .people .user{
     padding: 0px;
     width: 300px;
-    margin:30px 2%;
+    margin:5% 2%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -371,6 +378,9 @@ footer a:hover{
         flex-direction: column;
         align-items: center;
     }
+    .towrap{
+        margin: 0 10%;
+}
     /*aboutus*/
     .people{
         flex-direction: column;
@@ -387,5 +397,121 @@ footer a:hover{
     #forms textarea{
         width: 100%;
     }
+}
+@media (max-width:500px){
+    /*global*/
+    .current{
+        font-size: 13px;
+        padding: 6px;
+    }
+    /*header*/
+    #branding img{
+        width:55px;
+    } 
+    #appname h3{
+        font-size: 17px;
+    }
+     #appname div{
+        font-size: 14px;
+     }
+    header nav li {
+        font-size: 14px;
+        padding:0 2%;
+    }
+    header nav{
+        margin: 0;
+    }
+    header nav ul {
+        padding: 0;
+    }
+    header nav a{
+        padding: 0;
+    }
+    /*home*/
+    .layer h3{
+        font-size:35px;
+    }
+    .layer p{
+        font-size: 14px;
+        padding: auto;
+    }
+    .layer .down{
+        width: 35px;
+        height: 35px;
+    }
+    .layer .down i{
+        line-height: 1.2em;
+    }
+    /*Prtfilo*/
+    #special .title{
+        font-size: 28px;
+    }
+    #special p{
+        font-size: 14px;
+    }
+    #special nav li{
+        margin:8px 3px;
+    }
+    
+    .wrapper a img{
+        width: 100px;
+        height:100px ;
+    }
+    .wrapper a .text{
+        width: 100px;
+        height:100px ;
+    }
+    /*about us*/
+    .aboutus h1{
+        font-size: 35px;
+    }
+    .aboutus p{
+        font-size: 14px;
+    }
+    
+    .people .user{
+        width: 200px;
+    }
+    .user h1{
+        font-size: 30px;
+    }
+    .user div{
+        font-size: 18px;
+    }
+    .user p{
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+    /*Contact*/
+    .contactintro h1{
+        font-size: 35px;
+    }
+    .contactintro p{
+        font-size: 14px;
+    }
+    #forms .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:0 4% ;
+    }
+    #forms input[type="text"],input[type="email"]{
+        width: 93%;
+    }
+    #info {
+        font-size:14px;
+    }
+    #info h2{
+        font-size: 23px;
+    }
+    /*Footer*/
+    #footer .copyright{
+        font-size: 14px;
+    }
+    #footer a[class="up"]{
+        padding:4px 10px ;
+    }
+
 }
 
